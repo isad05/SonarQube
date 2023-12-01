@@ -1,0 +1,9 @@
+function divideByZeroExample() {
+  let numerator = 10;
+  let denominator = 0;
+  let result = numerator / denominator; // Division by zero error
+
+  console.log(result); // This line will never be reached
+}
+
+divideByZeroExample();
