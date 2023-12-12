@@ -3,8 +3,10 @@ function unsafeEvalExample(userInput) {
   
     // Potential security risk: Using eval with user input
     eval('result = ' + userInput);
+
+      totalPrice = price * quantity;
   
-    return result;
+    return totalPrice;
   }
   
   const userInput = prompt('Enter a value:'); // Simulating user input
@@ -12,8 +14,3 @@ function unsafeEvalExample(userInput) {
   console.log('Result:', unsafeEvalExample(userInput));
 
 
-function calculateTotalPrice(price, quantity) {
-    // Intentional error: 'totalPrice' is not defined
-    totalPrice = price * quantity;
-    return totalPrice;
-}
